@@ -1,0 +1,31 @@
+{
+  "name": "keystone",
+  "skip_llms_txt": true,
+  "description": "Keystone Design System documentation. Use for Keystone UI components, design patterns, and ByteDance internal design system guidelines.",
+  "base_url": "https://keystone.byteintl.net/",
+  "start_urls": [
+    "https://keystone.byteintl.net/",
+    "https://keystone.byteintl.net/getting-started",
+    "https://keystone.byteintl.net/components",
+    "https://keystone.byteintl.net/guide"
+  ],
+  "selectors": {
+    "main_content": "article, main, div[class*='content'], div[class*='markdown']",
+    "title": "h1",
+    "code_blocks": "pre code, pre"
+  },
+  "url_patterns": {
+    "include": ["/components", "/guide", "/getting-started", "/docs"],
+    "exclude": ["/search", "/_static", "/assets"]
+  },
+  "categories": {
+    "getting_started": ["getting-started", "introduction", "quick-start", "installation"],
+    "components": ["button", "input", "select", "form", "modal", "table", "component"],
+    "layout": ["layout", "grid", "flex", "container"],
+    "design": ["design", "pattern", "guideline", "principle"],
+    "theming": ["theme", "color", "typography", "spacing"],
+    "api": ["api", "reference", "props"]
+  },
+  "rate_limit": 0.5,
+  "max_pages": 300
+}
